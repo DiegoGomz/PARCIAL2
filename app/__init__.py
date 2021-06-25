@@ -13,7 +13,6 @@ Bootstrap(app)
 migrate = Migrate(app,db)
 login = LoginManager(app)
 login.login_view = "login"
-flask_uuid = FlaskUUID()
-flask_uuid.init_app(app)
+FlaskUUID(app)
 
 from app import routes, models
